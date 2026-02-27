@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Google Sans", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgba(216, 241, 230, 0.46) 0.1%,
@@ -17,8 +17,7 @@ body {
 .container {
   background: linear-gradient(90deg, #9adb89, rgba(215, 25, 221, 0.541));
   padding: 20px;
-  width: 65%;
-
+  width: min(90%, 900px);
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);

@@ -84,8 +84,8 @@ document.querySelectorAll("img")[1].classList.remove("hidden");
 document.getElementById("names-btn").classList.remove("hidden");
 
 document.getElementById("names-btn").onclick = function () {
-  player1Name = prompt("Enetr Player 1 Name.");
-  player2Name = prompt("Enetr Player 2 Name.");
+  player1Name = prompt("Enetr Player 1 Name.") || "Player 1";
+  player2Name = prompt("Enetr Player 2 Name.") || "Player 2";
 
   document.getElementById("names-btn").classList.add("hidden");
 
@@ -115,3 +115,4 @@ document.getElementById("button").onclick = function () {
     document.querySelector("h1").innerText = player2Name + " Wins!";
   }
 };
+
